@@ -14,10 +14,11 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       fontFamily:{
-        shojumaru:['shojumaru-regular'],
-        Kanit:['Kanit', 'sans-serif'],
-        Inter:['Inter','sans-serif']  
+        ZCOOL:['ZCOOL KuaiLe'],
+        Shojumaru:['ZCOOL KuaiLe','sans-serif'],
+        Lobster:['Lobster','sans-serif'],
       }
+     
     },
   },
   plugins: [],
