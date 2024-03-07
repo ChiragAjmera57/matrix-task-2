@@ -1,6 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Shojumaru&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -24,10 +26,435 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+  overflow-x: hidden;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+/* --------------------------------------------------------------------------- */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Fonts */
+
+.zcool-kuaile-regular {
+  font-family: "ZCOOL KuaiLe", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.shojumaru-regular {
+  font-family: "Shojumaru", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.HeroSection {
+  /* width: 1440px;
+  height: 887px; */
+  width: 100vw;
+  height: 100vh;
+  background-image: url("/backgroundHome.png");
+  background-repeat: no-repeat;
+  /* background-size: 100vw 100vh; */
+  background-size: cover;
+
+  /* background-clip: content-box; */
+  /* margin-top: -50px; */
+}
+
+/* .HeroSection::before {
+  content:  url("/backgroundHome.png");
+  background: linear-gradient(180deg, rgba(14, 14, 14, 0) 0%, #0e0e0e 100%);
+  opacity: 0.5;
+  z-index: -1;
+  position: relative;
+  background-size: ;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+} */
+
+.NavBar {
+  position: fixed;
+  height: 88px;
+  width: 94%;
+  top: 40px;
+  left: 30px;
+  /* padding: 16px, 32px, 16px, 32px; */
+  /* border-radius: 16px; */
+  /* border: 1px; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background: rgba(92, 79, 5, 0.44); */
+  /* background-color: white; */
+  /* border: 1px solid; */
+
+  /* border-image-source: linear-gradient(
+    90.29deg,
+    rgba(255, 255, 255, 0.31) 0%,
+    rgba(255, 255, 255, 0) 100%
+  ); */
+  background: transparent;
+  z-index: 1000;
+
+  /* box-shadow: 0px 2px 19.5px 0px rgba(219, 184, 0, 0.2); */
+}
+
+.HeroHome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navLogo {
+  width: 164.8px;
+  height: 56px;
+  gap: 8.51px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  /* margin-top: 16px; */
+  margin-left: 32px;
+}
+
+.Logo {
+  width: 56px;
+  height: 62px;
+}
+
+.LogoName {
+  margin-top: 12px;
+  width: 101px;
+  height: 56px;
+  gap: 7.2px;
+}
+
+.LogoFirst {
+  width: 97px;
+  /* height: 12px; */
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  font-family: "ZCOOL KuaiLe", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  font-style: normal;
+  /* letter-spacing: 0.16em; */
+  text-align: left;
+  /* color: rgba(255, 198, 3, 1); */
+}
+
+/* .LogoName > span {
+  width: 101px;
+  height: 6px;
+  font-family: Inter;
+  font-size: 9px;
+  font-weight: 700;
+  line-height: 11px;
+  letter-spacing: 1.17em;
+  text-align: left;
+  color: rgba(255, 255, 255, 1);
+} */
+
+.navbarText {
+  /* width: 792.8px; */
+  height: 56px;
+  gap: 32px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: rgba(25, 24, 24, 1);
+  border-radius: 20px;
+  box-shadow: 0px 10px 80px -18px rgba(205, 225, 255, 0.5);
+}
+
+.navbarText > ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  align-items: center;
+  margin-right: 25px;
+}
+
+.navbarText ul li {
+  /* list-style: none; */
+  /* height: 48.5px; */
+  padding: 15px, 24.2px, 16.5px, 24px;
+  border-radius: 16px;
+  gap: 10.55px;
+  cursor: pointer;
+  justify-content: center;
+  width: 137.45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .navbarText-about {
+  width: 101.2px;
+} */
+
+.navbarText-ido {
+  width: 104.2px !important;
+}
+
+/* .navbarText-token {
+  width: 156.2px;
+} */
+
+/* .navbarText-roadmap {
+  width: 130.2px;
+} */
+
+.cntwlt {
+  width: 187px;
+  height: 55px;
+  left: 605.8px;
+  border-radius: 10px;
+  /* background: rgba(249, 211, 38, 1); */
+  /* color: rgba(0, 0, 0, 1); */
+  color: white;
+  font-size: 16px;
+  background: linear-gradient(93.73deg, #D51B46 10.19%, #EE6910 98.19%);
+
+}
+
+/* .union{
+  position: absolute;
+  background-color: transparent;
+width: 230px;
+height: 230px;
+top: 50px;
+left: 0px;
+} */
+
+.HomeText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 45px;
+  text-align: center;
+  line-height: 53.55px;
+  text-align: center;
+  color: rgba(251, 246, 246, 1);
+  ;
+}
+
+
+
+.introductionPage{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+
+.introductionPage > div{
+  width: 50vw;
+  height: 100vh;
+}
+
+
+
+.intro-img{
+  width: 100%;
+}
+
+
+.intro-text{
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  flex-direction: column;
+  padding: 65px;
+}
+
+.heading{
+  font-size: 3rem;
+}
+
+.paragraph{
+  font-size: 1.5rem;
+  line-height: 1.7rem;
+}
+
+.intro-text > :nth-child(2n){
+  margin: 50px 0;
+}
+
+
+.ido{
+  width: 100vw;
+  height: 100vh;
+  background-image: url("/idoBG.png");
+  background-repeat: no-repeat;
+  /* background-size: 100vw 100vh; */
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.titleText span {
+  font-family: "Kanit", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 85px;
+  /* color: rgba(240, 246, 251, 1); */
+  line-height: 120px;
+  align-items: start;
+  width: max-content;
+}
+.titleText {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  z-index: -1;
+}
+
+img.house {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation-name: houseImage;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  filter: drop-shadow(-10px -10px 15px 0px rgba(0, 0, 0, 0.76)),
+    drop-shadow(10px 10px 15px 0px rgba(0, 0, 0, 0.76));
+  /* z-index: 10; */
+}
+
+.defi {
+  z-index: 100;
+  position: relative;
+  animation-name: title02;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+.bitcoin {
+  color: rgba(254, 204, 0, 1);
+  position: relative;
+  animation-name: title02;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  z-index: -1;
+}
+
+.gateway {
+  /* left: 50%; */
+  position: relative;
+  animation-name: title01;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  z-index: -1;
+}
+
+.to {
+  left: 50%;
+  position: relative;
+  animation-name: title01;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+/* Animation Part */
+
+@keyframes title01 {
+  0% {
+    left: -50%;
+  }
+  95% {
+    left: 10%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+
+@keyframes title02 {
+  0% {
+    left: 50%;
+  }
+  95% {
+    left: -10%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+
+@keyframes houseImage {
+  0% {
+    top: 100%;
+  }
+  95% {
+    top: 40%;
+  }
+  100% {
+    top: 50%;
+  }
+}
+
+/* Responsiveness Section */
+
+@media only screen and (max-width: 768px) {
+}
+
+.card-1 {
+  width: 1512px;
+height: 716px;
+opacity: 0.71px;
+
+  background-image: url('../asset/Roadmap.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+}
+.fotor {
+  width: 1512px;
+  height: 428px;
+  top: 4666px;
+  
+
+  background-image: url('../asset/footer.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
 }

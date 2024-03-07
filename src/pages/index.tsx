@@ -1,5 +1,5 @@
 import Image from "next/image";
-
+import navLogo from '../../public/navLogo.png'
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
@@ -7,7 +7,7 @@ export default function Home() {
         <div className="NavBar">
           <div className="navLogo">
             <div className="Logo">
-              <Image alt="BITVERSE" src="/navLogo.png" width="56" height="56" />
+              <Image alt="BITVERSE" src={navLogo} width="56" height="56" />
             </div>
             {/* <div className="LogoName"> */}
             <div className={" LogoFirst zcool-kuaile-regular"}>Saviour</div>
